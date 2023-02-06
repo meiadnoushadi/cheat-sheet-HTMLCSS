@@ -1,16 +1,125 @@
+GENERAL ATTRIBUTE:
+----------------------------------------------
+class
+id
+
+COMMENT:
+----------------------------------------------
+<!-- comment -->
+
 HTML:
-------------------------------------------
+----------------------------------------------
+network : TCP/IP
+tag <> :
+    !DOCTYPE html : type document
+    
+    html : root tag
+        # lang : default language
+    ------------------------------------------
+    head : header web page
+    
+    meta
+        # charset :
+            encode character
+        # name/content :
+            for view port
 
+    title : onvane nav bar dar browser
+    ------------------------------------------
+    body :  :
+    
+    h1 ... h6 : heading
+    
+    img : images
+        # src : address directory
+        # alt : text azamani ke pic load nashe
+    
+    p : prograph
+    
+    strong : bold charactor
+    
+    em : italic
+    
+    del : craete line in charactor
+    
+    br : line break point
+    
+    hr : horizontal line
+    
+    a : linke
+        # href : https reference 
+        # target : value[_blank]
+    
+    ul : unordered list
+    
+    li : item list
+    
+    ol : ordered list
+        # type : 1=> strat number 1 ,A=> strat alphabet
+        Note: dar list ha nested ham vojod dare
 
+    table : tag to create table
+    thead : th : head yek table
+    tbody : td : body yek table
+        <thead>
+            <tr>
+                <th>
+                
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                
+                </td>
+            </tr>
+        </tbody>
 
+    div : yek tag mafhome be mani division hast
+    
+    button : sakhte yek dokme hast
+        # type : noee ersal
+            @ submit : mese input submit amal mikone
+            @ reset : clear mikone tamame input hare neveshte shode ro
+    
+    form : yek in put form hast
+        # action : href ersal konandeye data be server
+        label : yek title baryae tag input hast
+            # for : baryae eshare be tag input made nazar hast 
+        input : yek tag vorodi hast                
+            # id : erja be label in input hast
+            # type : noee vorodi input hast
+                @ text : input text
+                @ email : input email
+                @ radio : selector radio
+                @ checkbox : single selected
+            # name : name data send to server
+            # value : selected data for send to server
+            Note : age input az noee text bashe value ke bezarim
+                   mishe value default input
+            # placeholder : yek attribute hast ke default
+                            kam rang hast
+            Note : age input az noee radio shod va baryae
+                   on name va value bezarim single click mishe
+            Note : age input az noee checkbox shod va baryae
+                   on name va value bezarim multiple select mishe
+            # number : baryae input shomare
+            # data : ovordane yek input date
+            # submit : create yek button va ersale on data haye form
+                       be action from
+            Note : barye inke button ba in skele input dorost konim
+                   yek tag button ba type submit misazim
+        textarea : input large text 
+            # cols : size column
+            # rows : size row
 
-
-
-
-
-
-
-
+        select : select keshoei
+            # name : name data send to server
+            # id : id data send to server
+            option : 
+                # value : selected data for send to server
+        
 
 
 
