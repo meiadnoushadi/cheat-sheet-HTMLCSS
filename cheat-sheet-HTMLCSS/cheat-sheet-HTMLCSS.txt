@@ -1,13 +1,22 @@
+----------------------------------------------
+----------------------------------------------
 GENERAL ATTRIBUTE:
+----------------------------------------------
 ----------------------------------------------
 class
 id
 
+----------------------------------------------
+----------------------------------------------
 COMMENT:
+----------------------------------------------
 ----------------------------------------------
 <!-- comment -->
 
+----------------------------------------------
+----------------------------------------------
 HTML:
+----------------------------------------------
 ----------------------------------------------
 network : TCP/IP
 tag <> :
@@ -119,13 +128,154 @@ tag <> :
             # id : id data send to server
             option : 
                 # value : selected data for send to server
-        
+------------------------------------------
+inline block:
+block : in halat tamame arrz ro migire
+        100% arraz ro migire
+inline : in halat andazye content faza migire
+------------------------------------------
+div - span - id - class :
+class :
+    attribute baraye CSS
+
+id :
+    attribute baraye CSS
+    Note : id monhaser be fard hast
+
+div :
+    block tag bedone mohtava
+
+span : 
+    inline tag bedone mohtava
+------------------------------------------
+semetic tag :
+    * header
+    * nav 
+    * main 
+    * aside
+    * section
+    * article
+    * footoer
 
 
 
 
 
-
-
+------------------------------------------
+------------------------------------------
 CSS:
 ------------------------------------------
+------------------------------------------
+include css in project :
+    * inline : use in tags in body
+    * internal : use in tag style in tag head 
+    * external : use in file.css
+        Note : import file by tag link in tag head
+               Attribute:
+                    * rel : stylesheet
+                    * href : address directory
+
+Note : comment in css => /* comment */
+Note : css miyad va besorat pishfarz yek seri style
+       be har tag mide ke be name 'user agent stylesheet'
+       hast 
+
+------------------------------------------
+selector :
+    1- Element selector : name tag
+    2- class selector : name class start by '.'
+    3- id selector : name id start by '#'
+    4- multiple selector : <selector1>,<selector2>,...
+    5- nested selector : <selector1> <selector2> ...
+
+------------------------------------------
+attribute : 
+    1- color : 
+        select color text tag
+            value =>> colors 
+    2- background :
+        * background-color: 
+            select color background tag
+                value =>> colors
+        * background-image:
+            select image for background
+            url('address/remote') 
+            @ background-repeat:
+                ravesh tekrare yek background
+                    value =>> no-repeat,x-repeat,...
+            @ background-position:
+                move image in block
+                    value =>> x:px y:px : center/top/bottom/left/right
+            @ background-size:
+                sytle image in block
+                    value =>> cover,contain
+            @ summry : background: url repeat position size
+    5- line-height : 
+        fasele beyne khotot
+    3- font-family : 
+        font text for tag 
+    4- font-size : 
+        size font text for tag 
+    6- font-weight : 
+        dadan vazne be text 
+            value=>>bold,small,...
+    7- font-sytle : 
+        dadan style neveshtari be text
+    8- border : 
+        dadan hasheye
+        * border-width : 
+            size border
+        * border-color : 
+            color border
+        * border-sytle :
+            dadane style be border
+                value =>> solid,dashed,...
+        * summry : border-width border-color border-style
+        Note : border-top,border-bottom,...
+        Note : border-redius dadan cerve bar assase size hast
+    9- height : dadane erfeta be yek Element
+    10- wight : dadane arrz be yek Element  
+
+------------------------------------------
+fonts :
+
+
+
+
+
+------------------------------------------
+colors :
+    nameColor => red,blue,...
+    rgb => rgb(a,b,c) :  0<= a,b,c <= 255 
+    rgb => rgba(a,b,c,d) :  0<= a,b,c <= 255 , 0<=d<=1
+    hex => #abcdef : ba assase 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+------------------------------------------
+morgin | padding :
+
+    margin > border > padding > content
+
+    Note : Reset CSS :
+        *{
+            margin:0;
+            padding:0;
+        }
+
+    margin : fasele yek block az block kenar
+        * top
+        * bottom
+        * left
+        * right
+        summry = margin:top right bottom left;
+               = margin : top/bottom right/left
+    padding : fasele border az mohtava
+        * top
+        * bottom
+        * left
+        * right
+        summry = padding:top right bottom left;
+               = padding : top/bottom right/left
+
+------------------------------------------
+Box Model :
+
