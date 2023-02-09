@@ -459,3 +459,21 @@ structure:
 	Note : dar tag link dar tag head baraye css beghire az rel va href
 			 attribute dige ham dare be name media ke beshorat zir por mishe:
 				meida="[not|only(default)] <meida-type> [and] (<media-condition>)" 
+
+------------------------------------------
+------------------------------------------
+CSS-animation:
+------------------------------------------
+------------------------------------------
+transition:
+	* transition-property : <name property> , <name property>  
+		Note: age be jaye name property all bezarim mishe defaultesh
+	* transition-duration : Xs , Ys  modat zaman vahed s/ms
+		Note: age transition-property dade nashe transition-duration
+			    besorat pishfarz roe efect ha emal mishe (ex:hover) va
+					default 0ms hast.
+	* transition-delay : Xs , Ys  modat zamane maxx shodan
+	* transition-timing-function : ease/linear/ease-in/ease-out/ease-in-out
+		Note : cubic-bezier() mitoni ber to site : www.cubic-bezier.com
+
+	shortcute : transition : <property> <duration> <delay> <timing> , <property> <duration> <delay> <timing>
