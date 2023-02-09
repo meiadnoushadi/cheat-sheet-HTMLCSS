@@ -383,4 +383,22 @@ Box Model : ba border model in mozo made nazar
         * border-box
         * content-box : default
 
-
+------------------------------------------
+before,after:
+    after :
+        create element bad az selector => element:after 
+        * content : mohtavaye shebhe element
+    
+    before :
+        create element ghabl az selector => element:after 
+        * content : mohtavaye shebhe element
+------------------------------------------
+nth:
+    selector:first-child
+    selector:last-child
+    selector:nth-child(shomare farzand)
+        odd : fard
+        even : zoj
+        3n+0 : 3 ta 3 ta az 0 shoro kon be entekhab
+    Note : keyword <!important> baees mishe ke code made nazar dar olaviyate
+           gharar beghire
