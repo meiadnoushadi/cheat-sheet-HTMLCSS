@@ -57,7 +57,10 @@ tag <> :
     
     a : linke
         # href : https reference 
-        # target : value[_blank]
+        # target : value[
+            _blank : toye page new baz mikone
+            self : dakhele khodesh baz mikone
+            ]
     
     ul : unordered list
     
@@ -128,6 +131,7 @@ tag <> :
             # id : id data send to server
             option : 
                 # value : selected data for send to server
+    button : baraye ejad be click morede estefade gharar migire
 ------------------------------------------
 inline block:
 block : in halat tamame arrz ro migire
@@ -187,9 +191,12 @@ selector :
     3- id selector : name id start by '#'
     4- multiple selector : <selector1>,<selector2>,...
     5- nested selector : <selector1> <selector2> ...
+    6- selector child nested : selectro1 > selector2
+    7- selector family : selectro1 + selector2
+    8- select by attribute : selector[nameAtrribute] | selector[nameAtrribute=value]
 
 ------------------------------------------
-attribute : 
+general attribute : 
     1- color : 
         select color text tag
             value =>> colors 
@@ -233,11 +240,96 @@ attribute :
         * summry : border-width border-color border-style
         Note : border-top,border-bottom,...
         Note : border-redius dadan cerve bar assase size hast
-    9- height : dadane erfeta be yek Element
-    10- wight : dadane arrz be yek Element  
+    9- height : 
+        dadane erfeta be yek Element
+    10- wight : 
+        dadane arrz be yek Element
+    11- max-width : 
+        bishtarin hade yek element dar arrz
+    12- text-align : 
+        mahale gharar gire text dar box khodesh
+            value =>> center,left,right,justify
+    -----
+    link
+    -----
+    13- text-decoration :
+        khat zire tag likn ha
+            value =>> none,underline(default),
+    14- pseudo class :
+        shebhe class dar linke ha hastan
+        * a:link => hamon namayesh link dar page hast (pseudo class default)
+        * a:visited => dar zamani estefade mihse ke az link didan shode
+        * a:hover => dar zamani estefade mishe ke esharegare mouse miyad roye link 
+        * a:active => dar zamani estefade mishe ke roye mouse click va negah dashte mishe
+        * a:focus => far zamani estefade mishe ke yek element ro ba click entekhab karde bashim
+    15- cursor:
+        dar zamani ke ba mouse miyam roye yek element
+        esharegare mouse ro avaz mikone
+            value =>> pointer
+    ------
+    button        
+    shabihe be link hast maghadir default
+        * dare border radius
+
+    16- z-index :
+        olaviyate namayesh element ha dar page gofte mishe
+        value =>> - -> 0 -> + : olaviyate ba + ha hast
+    
+    17- list-style : baraye namayesh icon list ha hast
+        value =>> none,circle,...
+    
+    18- opacity : 
+        baraye namayesh blur yek element morde estefade gharar mighire
+    
+    19- display :
+        anvaye ravesh haye hast ke yek element dar page dare
+        value =>> inline,inline-block,block
+------------------------------------------
+layout :
+    flaot :
+        float be in sorat amal mikone ke miyad va 
+        chidenam dar page ro tanzim mikone
+        Note : age be parent flaot bedin on ro az
+               flow page kharej kardim va in kar baees
+               mishe ke box zirin on box float biyd va
+               jash ro dar page begire ke ba clearfix
+               in moshkel ro hal mikonim
+            value =>> left,right
+    
+    position :
+        value =>> static,relative,fixed,absolute,sticky
+
+        static : default
+
+        relative :in value baees mishe ke position haye absolute
+                  child ha bar assase container left,right,bottom,top
+                  begiran
+
+        absolute :
+            property hary ke bad in in gozashtane in property active mishen:
+                left,
+                right,
+                top,
+                bottom
+            Note : dar zamani ke position yek element ro absolute
+                   mikonim az flow page kharej
+
+        fixed : in value baees mishe on element dar view prot fix beshe
+
+        sticky : in kar bess mishe dar zamani ke scroll miyad roee
+                in element jaye on element dar page fix mishe
+    
+    felx :
+
+    grid :
 
 ------------------------------------------
 fonts :
+    query :
+        @font-face: <nameFont>;
+        src:url('address file ') format ('nameFormat'),
+        ...
+    Note : use in query yek name font baraye ma misaze(font-family)
 
 
 
@@ -277,5 +369,18 @@ morgin | padding :
                = padding : top/bottom right/left
 
 ------------------------------------------
-Box Model :
+Box Model : ba border model in mozo made nazar 
+            gerefte mishe ke shoma mitonid:
+            margin-padding-content dar yek box bezrid
+            va size box in on chizi ke made nazar
+            baryae on box gerftid bishtar nashe
+            ke halat pish farz roye content box 
+            hast ke harchi size be margin va padding bedid 
+            az content shoro mikone be biron pish raftan
+            vali dar border box az border be dakhel harekat
+            mikone
+    box-sizing :
+        * border-box
+        * content-box : default
+
 
