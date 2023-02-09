@@ -20,146 +20,146 @@ HTML:
 ----------------------------------------------
 network : TCP/IP
 tag <> :
-    !DOCTYPE html : type document
-    
-    html : root tag
-        # lang : default language
-    ------------------------------------------
-    head : header web page
-    
-    meta
-        # charset :
-            encode character
-        # name/content :
-            for view port
+	!DOCTYPE html : type document
+	
+	html : root tag
+		# lang : default language
+	------------------------------------------
+	head : header web page
+	
+	meta
+		# charset :
+			encode character
+		# name/content :
+			for view port
 
-    title : onvane nav bar dar browser
-    ------------------------------------------
-    body :  :
-    
-    h1 ... h6 : heading
-    
-    img : images
-        # src : address directory
-        # alt : text azamani ke pic load nashe
-    
-    p : prograph
-    
-    strong : bold charactor
-    
-    em : italic
-    
-    del : craete line in charactor
-    
-    br : line break point
-    
-    hr : horizontal line
-    
-    a : linke
-        # href : https reference 
-        # target : value[
-            _blank : toye page new baz mikone
-            self : dakhele khodesh baz mikone
-            ]
-    
-    ul : unordered list
-    
-    li : item list
-    
-    ol : ordered list
-        # type : 1=> strat number 1 ,A=> strat alphabet
-        Note: dar list ha nested ham vojod dare
+	title : onvane nav bar dar browser
+	------------------------------------------
+	body :  :
+	
+	h1 ... h6 : heading
+	
+	img : images
+		# src : address directory
+		# alt : text azamani ke pic load nashe
+	
+	p : prograph
+	
+	strong : bold charactor
+	
+	em : italic
+	
+	del : craete line in charactor
+	
+	br : line break point
+	
+	hr : horizontal line
+	
+	a : linke
+		# href : https reference 
+		# target : value[
+			_blank : toye page new baz mikone
+			self : dakhele khodesh baz mikone
+			]
+	
+	ul : unordered list
+	
+	li : item list
+	
+	ol : ordered list
+		# type : 1=> strat number 1 ,A=> strat alphabet
+		Note: dar list ha nested ham vojod dare
 
-    table : tag to create table
-    thead : th : head yek table
-    tbody : td : body yek table
-        <thead>
-            <tr>
-                <th>
-                
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                
-                </td>
-            </tr>
-        </tbody>
+	table : tag to create table
+	thead : th : head yek table
+	tbody : td : body yek table
+		<thead>
+			<tr>
+				<th>
+				
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+				
+				</td>
+			</tr>
+		</tbody>
 
-    div : yek tag mafhome be mani division hast
-    
-    button : sakhte yek dokme hast
-        # type : noee ersal
-            @ submit : mese input submit amal mikone
-            @ reset : clear mikone tamame input hare neveshte shode ro
-    
-    form : yek in put form hast
-        # action : href ersal konandeye data be server
-        label : yek title baryae tag input hast
-            # for : baryae eshare be tag input made nazar hast 
-        input : yek tag vorodi hast                
-            # id : erja be label in input hast
-            # type : noee vorodi input hast
-                @ text : input text
-                @ email : input email
-                @ radio : selector radio
-                @ checkbox : single selected
-            # name : name data send to server
-            # value : selected data for send to server
-            Note : age input az noee text bashe value ke bezarim
-                   mishe value default input
-            # placeholder : yek attribute hast ke default
-                            kam rang hast
-            Note : age input az noee radio shod va baryae
-                   on name va value bezarim single click mishe
-            Note : age input az noee checkbox shod va baryae
-                   on name va value bezarim multiple select mishe
-            # number : baryae input shomare
-            # data : ovordane yek input date
-            # submit : create yek button va ersale on data haye form
-                       be action from
-            Note : barye inke button ba in skele input dorost konim
-                   yek tag button ba type submit misazim
-        textarea : input large text 
-            # cols : size column
-            # rows : size row
+	div : yek tag mafhome be mani division hast
+	
+	button : sakhte yek dokme hast
+		# type : noee ersal
+			@ submit : mese input submit amal mikone
+			@ reset : clear mikone tamame input hare neveshte shode ro
+	
+	form : yek in put form hast
+		# action : href ersal konandeye data be server
+		label : yek title baryae tag input hast
+			# for : baryae eshare be tag input made nazar hast 
+		input : yek tag vorodi hast                
+			# id : erja be label in input hast
+			# type : noee vorodi input hast
+				@ text : input text
+				@ email : input email
+				@ radio : selector radio
+				@ checkbox : single selected
+			# name : name data send to server
+			# value : selected data for send to server
+			Note : age input az noee text bashe value ke bezarim
+					 mishe value default input
+			# placeholder : yek attribute hast ke default
+							kam rang hast
+			Note : age input az noee radio shod va baryae
+					 on name va value bezarim single click mishe
+			Note : age input az noee checkbox shod va baryae
+					 on name va value bezarim multiple select mishe
+			# number : baryae input shomare
+			# data : ovordane yek input date
+			# submit : create yek button va ersale on data haye form
+						 be action from
+			Note : barye inke button ba in skele input dorost konim
+					 yek tag button ba type submit misazim
+		textarea : input large text 
+			# cols : size column
+			# rows : size row
 
-        select : select keshoei
-            # name : name data send to server
-            # id : id data send to server
-            option : 
-                # value : selected data for send to server
-    button : baraye ejad be click morede estefade gharar migire
+		select : select keshoei
+			# name : name data send to server
+			# id : id data send to server
+			option : 
+				# value : selected data for send to server
+	button : baraye ejad be click morede estefade gharar migire
 ------------------------------------------
 inline block:
 block : in halat tamame arrz ro migire
-        100% arraz ro migire
+		100% arraz ro migire
 inline : in halat andazye content faza migire
 ------------------------------------------
 div - span - id - class :
 class :
-    attribute baraye CSS
+	attribute baraye CSS
 
 id :
-    attribute baraye CSS
-    Note : id monhaser be fard hast
+	attribute baraye CSS
+	Note : id monhaser be fard hast
 
 div :
-    block tag bedone mohtava
+	block tag bedone mohtava
 
 span : 
-    inline tag bedone mohtava
+	inline tag bedone mohtava
 ------------------------------------------
 semetic tag :
-    * header
-    * nav 
-    * main 
-    * aside
-    * section
-    * article
-    * footoer
+	* header
+	* nav 
+	* main 
+	* aside
+	* section
+	* article
+	* footoer
 
 
 
@@ -167,169 +167,169 @@ semetic tag :
 
 ------------------------------------------
 ------------------------------------------
-CSS:
+CSS-basic:
 ------------------------------------------
 ------------------------------------------
 include css in project :
-    * inline : use in tags in body
-    * internal : use in tag style in tag head 
-    * external : use in file.css
-        Note : import file by tag link in tag head
-               Attribute:
-                    * rel : stylesheet
-                    * href : address directory
+	* inline : use in tags in body
+	* internal : use in tag style in tag head 
+	* external : use in file.css
+		Note : import file by tag link in tag head
+				 Attribute:
+					* rel : stylesheet
+					* href : address directory
 
 Note : comment in css => /* comment */
 Note : css miyad va besorat pishfarz yek seri style
-       be har tag mide ke be name 'user agent stylesheet'
-       hast 
+		 be har tag mide ke be name 'user agent stylesheet'
+		 hast 
 
 ------------------------------------------
 selector :
-    1- Element selector : name tag
-    2- class selector : name class start by '.'
-    3- id selector : name id start by '#'
-    4- multiple selector : <selector1>,<selector2>,...
-    5- nested selector : <selector1> <selector2> ...
-    6- selector child nested : selectro1 > selector2
-    7- selector family : selectro1 + selector2
-    8- select by attribute : selector[nameAtrribute] | selector[nameAtrribute=value]
+	1- Element selector : name tag
+	2- class selector : name class start by '.'
+	3- id selector : name id start by '#'
+	4- multiple selector : <selector1>,<selector2>,...
+	5- nested selector : <selector1> <selector2> ...
+	6- selector child nested : selectro1 > selector2
+	7- selector family : selectro1 + selector2
+	8- select by attribute : selector[nameAtrribute] | selector[nameAtrribute=value]
 
 ------------------------------------------
 general attribute : 
-    1- color : 
-        select color text tag
-            value =>> colors 
-    2- background :
-        * background-color: 
-            select color background tag
-                value =>> colors
-        * background-image:
-            select image for background
-            url('address/remote') 
-            @ background-repeat:
-                ravesh tekrare yek background
-                    value =>> no-repeat,x-repeat,...
-            @ background-position:
-                move image in block
-                    value =>> x:px y:px : center/top/bottom/left/right
-            @ background-size:
-                sytle image in block
-                    value =>> cover,contain
-            @ summry : background: url repeat position size
-    5- line-height : 
-        fasele beyne khotot
-    3- font-family : 
-        font text for tag 
-    4- font-size : 
-        size font text for tag 
-    6- font-weight : 
-        dadan vazne be text 
-            value=>>bold,small,...
-    7- font-sytle : 
-        dadan style neveshtari be text
-    8- border : 
-        dadan hasheye
-        * border-width : 
-            size border
-        * border-color : 
-            color border
-        * border-sytle :
-            dadane style be border
-                value =>> solid,dashed,...
-        * summry : border-width border-color border-style
-        Note : border-top,border-bottom,...
-        Note : border-redius dadan cerve bar assase size hast
-    9- height : 
-        dadane erfeta be yek Element
-    10- wight : 
-        dadane arrz be yek Element
-    11- max-width : 
-        bishtarin hade yek element dar arrz
-    12- text-align : 
-        mahale gharar gire text dar box khodesh
-            value =>> center,left,right,justify
-    -----
-    link
-    -----
-    13- text-decoration :
-        khat zire tag likn ha
-            value =>> none,underline(default),
-    14- pseudo class :
-        shebhe class dar linke ha hastan
-        * a:link => hamon namayesh link dar page hast (pseudo class default)
-        * a:visited => dar zamani estefade mihse ke az link didan shode
-        * a:hover => dar zamani estefade mishe ke esharegare mouse miyad roye link 
-        * a:active => dar zamani estefade mishe ke roye mouse click va negah dashte mishe
-        * a:focus => far zamani estefade mishe ke yek element ro ba click entekhab karde bashim
-    15- cursor:
-        dar zamani ke ba mouse miyam roye yek element
-        esharegare mouse ro avaz mikone
-            value =>> pointer
-    ------
-    button        
-    shabihe be link hast maghadir default
-        * dare border radius
+	1- color : 
+		select color text tag
+			value =>> colors 
+	2- background :
+		* background-color: 
+			select color background tag
+				value =>> colors
+		* background-image:
+			select image for background
+			url('address/remote') 
+			@ background-repeat:
+				ravesh tekrare yek background
+					value =>> no-repeat,x-repeat,...
+			@ background-position:
+				move image in block
+					value =>> x:px y:px : center/top/bottom/left/right
+			@ background-size:
+				sytle image in block
+					value =>> cover,contain
+			@ summry : background: url repeat position size
+	5- line-height : 
+		fasele beyne khotot
+	3- font-family : 
+		font text for tag 
+	4- font-size : 
+		size font text for tag 
+	6- font-weight : 
+		dadan vazne be text 
+			value=>>bold,small,...
+	7- font-sytle : 
+		dadan style neveshtari be text
+	8- border : 
+		dadan hasheye
+		* border-width : 
+			size border
+		* border-color : 
+			color border
+		* border-sytle :
+			dadane style be border
+				value =>> solid,dashed,...
+		* summry : border-width border-color border-style
+		Note : border-top,border-bottom,...
+		Note : border-redius dadan cerve bar assase size hast
+	9- height : 
+		dadane erfeta be yek Element
+	10- wight : 
+		dadane arrz be yek Element
+	11- max-width : 
+		bishtarin hade yek element dar arrz
+	12- text-align : 
+		mahale gharar gire text dar box khodesh
+			value =>> center,left,right,justify
+	-----
+	link
+	-----
+	13- text-decoration :
+		khat zire tag likn ha
+			value =>> none,underline(default),
+	14- pseudo class :
+		shebhe class dar linke ha hastan
+		* a:link => hamon namayesh link dar page hast (pseudo class default)
+		* a:visited => dar zamani estefade mihse ke az link didan shode
+		* a:hover => dar zamani estefade mishe ke esharegare mouse miyad roye link 
+		* a:active => dar zamani estefade mishe ke roye mouse click va negah dashte mishe
+		* a:focus => far zamani estefade mishe ke yek element ro ba click entekhab karde bashim
+	15- cursor:
+		dar zamani ke ba mouse miyam roye yek element
+		esharegare mouse ro avaz mikone
+			value =>> pointer
+	------
+	button        
+	shabihe be link hast maghadir default
+		* dare border radius
 
-    16- z-index :
-        olaviyate namayesh element ha dar page gofte mishe
-        value =>> - -> 0 -> + : olaviyate ba + ha hast
-    
-    17- list-style : baraye namayesh icon list ha hast
-        value =>> none,circle,...
-    
-    18- opacity : 
-        baraye namayesh blur yek element morde estefade gharar mighire
-    
-    19- display :
-        anvaye ravesh haye hast ke yek element dar page dare
-        value =>> inline,inline-block,block
+	16- z-index :
+		olaviyate namayesh element ha dar page gofte mishe
+		value =>> - -> 0 -> + : olaviyate ba + ha hast
+	
+	17- list-style : baraye namayesh icon list ha hast
+		value =>> none,circle,...
+	
+	18- opacity : 
+		baraye namayesh blur yek element morde estefade gharar mighire
+	
+	19- display :
+		anvaye ravesh haye hast ke yek element dar page dare
+		value =>> inline,inline-block,block
 ------------------------------------------
 layout :
-    flaot :
-        float be in sorat amal mikone ke miyad va 
-        chidenam dar page ro tanzim mikone
-        Note : age be parent flaot bedin on ro az
-               flow page kharej kardim va in kar baees
-               mishe ke box zirin on box float biyd va
-               jash ro dar page begire ke ba clearfix
-               in moshkel ro hal mikonim
-            value =>> left,right
-    
-    position :
-        value =>> static,relative,fixed,absolute,sticky
+	flaot :
+		float be in sorat amal mikone ke miyad va 
+		chidenam dar page ro tanzim mikone
+		Note : age be parent flaot bedin on ro az
+				 flow page kharej kardim va in kar baees
+				 mishe ke box zirin on box float biyd va
+				 jash ro dar page begire ke ba clearfix
+				 in moshkel ro hal mikonim
+			value =>> left,right
+	
+	position :
+		value =>> static,relative,fixed,absolute,sticky
 
-        static : default
+		static : default
 
-        relative :in value baees mishe ke position haye absolute
-                  child ha bar assase container left,right,bottom,top
-                  begiran
+		relative :in value baees mishe ke position haye absolute
+					child ha bar assase container left,right,bottom,top
+					begiran
 
-        absolute :
-            property hary ke bad in in gozashtane in property active mishen:
-                left,
-                right,
-                top,
-                bottom
-            Note : dar zamani ke position yek element ro absolute
-                   mikonim az flow page kharej
+		absolute :
+			property hary ke bad in in gozashtane in property active mishen:
+				left,
+				right,
+				top,
+				bottom
+			Note : dar zamani ke position yek element ro absolute
+					 mikonim az flow page kharej
 
-        fixed : in value baees mishe on element dar view prot fix beshe
+		fixed : in value baees mishe on element dar view prot fix beshe
 
-        sticky : in kar bess mishe dar zamani ke scroll miyad roee
-                in element jaye on element dar page fix mishe
-    
-    felx :
+		sticky : in kar bess mishe dar zamani ke scroll miyad roee
+				in element jaye on element dar page fix mishe
+	
+	felx :
 
-    grid :
+	grid :
 
 ------------------------------------------
 fonts :
-    query :
-        @font-face: <nameFont>;
-        src:url('address file ') format ('nameFormat'),
-        ...
-    Note : use in query yek name font baraye ma misaze(font-family)
+	query :
+		@font-face: <nameFont>;
+		src:url('address file ') format ('nameFormat'),
+		...
+	Note : use in query yek name font baraye ma misaze(font-family)
 
 
 
@@ -337,68 +337,125 @@ fonts :
 
 ------------------------------------------
 colors :
-    nameColor => red,blue,...
-    rgb => rgb(a,b,c) :  0<= a,b,c <= 255 
-    rgb => rgba(a,b,c,d) :  0<= a,b,c <= 255 , 0<=d<=1
-    hex => #abcdef : ba assase 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+	nameColor => red,blue,...
+	rgb => rgb(a,b,c) :  0<= a,b,c <= 255 
+	rgb => rgba(a,b,c,d) :  0<= a,b,c <= 255 , 0<=d<=1
+	hex => #abcdef : ba assase 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 
 ------------------------------------------
 morgin | padding :
 
-    margin > border > padding > content
+	margin > border > padding > content
 
-    Note : Reset CSS :
-        *{
-            margin:0;
-            padding:0;
-        }
+	Note : Reset CSS :
+		*{
+			box-sizing:border-box;
+			margin:0;
+			padding:0;
+		}
 
-    margin : fasele yek block az block kenar
-        * top
-        * bottom
-        * left
-        * right
-        summry = margin:top right bottom left;
-               = margin : top/bottom right/left
-    padding : fasele border az mohtava
-        * top
-        * bottom
-        * left
-        * right
-        summry = padding:top right bottom left;
-               = padding : top/bottom right/left
+	margin : fasele yek block az block kenar
+		* top
+		* bottom
+		* left
+		* right
+		summry = margin:top right bottom left;
+				 = margin : top/bottom right/left
+	padding : fasele border az mohtava
+		* top
+		* bottom
+		* left
+		* right
+		summry = padding:top right bottom left;
+				 = padding : top/bottom right/left
 
 ------------------------------------------
 Box Model : ba border model in mozo made nazar 
-            gerefte mishe ke shoma mitonid:
-            margin-padding-content dar yek box bezrid
-            va size box in on chizi ke made nazar
-            baryae on box gerftid bishtar nashe
-            ke halat pish farz roye content box 
-            hast ke harchi size be margin va padding bedid 
-            az content shoro mikone be biron pish raftan
-            vali dar border box az border be dakhel harekat
-            mikone
-    box-sizing :
-        * border-box
-        * content-box : default
+			gerefte mishe ke shoma mitonid:
+			margin-padding-content dar yek box bezrid
+			va size box in on chizi ke made nazar
+			baryae on box gerftid bishtar nashe
+			ke halat pish farz roye content box 
+			hast ke harchi size be margin va padding bedid 
+			az content shoro mikone be biron pish raftan
+			vali dar border box az border be dakhel harekat
+			mikone
+	box-sizing :
+		* border-box
+		* content-box : default
 
 ------------------------------------------
 before,after:
-    after :
-        create element bad az selector => element:after 
-        * content : mohtavaye shebhe element
-    
-    before :
-        create element ghabl az selector => element:after 
-        * content : mohtavaye shebhe element
+	after :
+		create element bad az selector => element:after 
+		* content : mohtavaye shebhe element
+	
+	before :
+		create element ghabl az selector => element:after 
+		* content : mohtavaye shebhe element
 ------------------------------------------
 nth:
-    selector:first-child
-    selector:last-child
-    selector:nth-child(shomare farzand)
-        odd : fard
-        even : zoj
-        3n+0 : 3 ta 3 ta az 0 shoro kon be entekhab
-    Note : keyword <!important> baees mishe ke code made nazar dar olaviyate
-           gharar beghire
+	selector:first-child
+	selector:last-child
+	selector:nth-child(shomare farzand)
+		odd : fard
+		even : zoj
+		3n+0 : 3 ta 3 ta az 0 shoro kon be entekhab
+	Note : keyword <!important> baees mishe ke code made nazar dar olaviyate
+			 gharar beghire
+------------------------------------------
+em/rem:
+	em :
+		1 em == font-size dakhele css
+		Note : html tag font sizesh default 16px hast
+		Note : em yek element nesbat dare ba font-size parentesh
+		Note : age az vahed em baraye mavarede dige estefade shod
+				 age khode tag font size dasht em ro bar hasbe on
+				 hesab mikone vali age nadash az valed estefade mikone
+
+	rem : 
+		1 rem == font-size html ke 16px hast
+
+------------------------------------------
+vh/vw:
+	vh: har 1 vh == 1% height viewport
+	vw : har 1 vw == 1% width viewport
+
+	Note: vaghti ke height mizari roye 100% height tamame
+				container khodesh ro migire vali vaghti az 100vh
+				estefade mikonim 100% viewport khodesh ro migire
+
+	 
+
+
+------------------------------------------
+------------------------------------------
+CSS-responsive:
+------------------------------------------
+------------------------------------------
+do rah baraye responsive hast:
+	1- responsive web design
+	2- mobile first web design
+
+structure:
+	@media [not|only(default)] <meida-type> [and] (<media-condition>);
+
+	value media type:
+		all => default
+		print
+		speech
+		screen
+
+	max-width : ta in indaze 
+	min-width : shor az in indaze
+
+	best size (break point):
+		smartphone : ta 500px => max-width:500px
+		table : az 501px ta 768px => min-width:501px / max-width:768px
+		normal : az 769px ta 1200px
+		widescreen : az 1201px be bala
+		landscape : kar ba max va min height
+
+	Note : dar tag link dar tag head baraye css beghire az rel va href
+			 attribute dige ham dare be name media ke beshorat zir por mishe:
+				meida="[not|only(default)] <meida-type> [and] (<media-condition>)" 
