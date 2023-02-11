@@ -1,332 +1,430 @@
 /* body{
-  background:gray;
+    background:gray;
 }
 @font-face {
-  font-family: naz;
-  src: url('./Lalezar-Font/TTF/Lalezar-Regular.ttf');
+    font-family: naz;
+    src: url('./Lalezar-Font/TTF/Lalezar-Regular.ttf');
 }
 .btn{
-  font-family:naz;
-  font-size: 3rem;
-  display: block;
-  width: 48%;
-  padding: 20px;
-  margin: 50px auto;
-  border: none;
-  cursor: pointer;
-  color: white;
-  background-color: rgb(0, 140, 255);
-  transition-property: background-color;
-  transition-duration: 1s;
+    font-family:naz;
+    font-size: 3rem;
+    display: block;
+    width: 48%;
+    padding: 20px;
+    margin: 50px auto;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 140, 255);
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 .btn:hover{
-  background-color: aqua;
+    background-color: aqua;
 } */
 
 body{
-  background-color: #ef7e56;
-  color: white;
+    background-color: #ef7e56;
+    color: white;
 }
+
+/* transition */
 .buttons-container{
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 button{
-  margin: 20px;
-  padding: 20px;
-  background-color: transparent;
-  color: #fff;
-  border: 0px;
-  cursor: pointer;
-  font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
 #one{
-  background-color: #fff;
-  color: #ef7e56;
-  border: 3px solid transparent;
-  transition: all 0.3s;
-  display: block;
-  margin: 20px auto;
+    background-color: #fff;
+    color: #ef7e56;
+    border: 3px solid transparent;
+    transition: all 0.3s;
 }
 #one:hover{
-  border: 3px solid white;
-  background-color: #ef7e56;
-  color: #fff;
+    border: 3px solid white;
+    background-color: #ef7e56;
+    color: #fff;
 }
 
 #two{
-  position: relative;
-  display: block;
-  margin: 20px auto;
+    position: relative;
 }
 
 #two::before{
-  content: '';
-  height: 2px;
-  width: 0%;
-  bottom: 0px;
-  right: 0px;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s;
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s;
 }
 #two:hover::before{
-  height: 2px;
-  width: 100%;
+    height: 2px;
+    width: 100%;
 }
 #two::after{
-  content: '';
-  height: 0%;
-  width: 2px;
-  bottom: 0px;
-  right: 0px;
-  position: absolute;
-  background: #fff;
-  transition: height 0.3s;
+    content: '';
+    height: 0%;
+    width: 2px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background: #fff;
+    transition: height 0.3s;
 }
 #two:hover::after{
-  height: 100%;
-  width: 2px;
+    height: 100%;
+    width: 2px;
 }
 #three{
-  box-sizing: border-box;
-  position: relative;
-  letter-spacing: 0px;
-  transition: letter-spacing 0.3s;
-  display: block;
-  margin: 20px auto;
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: 0px;
+    transition: letter-spacing 0.3s;
 }
 #three:hover{
-  letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 #three::before{
-  content: '';
-  height: 2px;
-  width: 0%;
-  top: 0px;
-  right: 0px;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s;
+    content: '';
+    height: 2px;
+    width: 0%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s;
 }
 #three:hover::before{
-  height: 2px;
-  width: 100%;
+    height: 2px;
+    width: 100%;
 }
 #three::after{
-  content: '';
-  height: 2px;
-  width: 0%;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s;
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s;
 }
 #three:hover::after{
-  height: 2px;
-  width: 100%;
+    height: 2px;
+    width: 100%;
 }
 
 #four{
-  position: relative;
-  display: block;
-  margin: 20px auto; 
-  /* border: 0.5px solid; */
+    position: relative;
+    /* border: 0.5px solid; */
 }
 
 #four::before{
-  box-sizing: border-box;
-  content: '';
-  height: 10px;
-  width: 10px;
-  /* background: #fff; */
-  border: 3px solid #fff ;
-  border-color: #fff #fff transparent transparent;
-  top: 0px;
-  right: 0px;
-  position: absolute;
-  transition: all 0.3s;
+    box-sizing: border-box;
+    content: '';
+    height: 10px;
+    width: 10px;
+    /* background: #fff; */
+    border: 3px solid #fff ;
+    border-color: #fff #fff transparent transparent;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    transition: all 0.3s;
 }
 
 #four::after{
-  box-sizing: border-box;
-  content: '';
-  height: 10px;
-  width: 10px;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  /* background: #fff; */
-  border: 3px solid #fff ;
-  border-color:transparent transparent #fff #fff ;
+    box-sizing: border-box;
+    content: '';
+    height: 10px;
+    width: 10px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    /* background: #fff; */
+    border: 3px solid #fff ;
+    border-color:transparent transparent #fff #fff ;
 
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #four:hover::before,
 #four:hover::after{
-  height:100%;
-  width: 100% ;
+    height:100%;
+    width: 100% ;
 }
 
 
 
 #five{
-  border: 1px solid #fff;
-  transition: all 0.3s;
-  /* dare roe shadow transition mide */
-  position: relative;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    /* dare roe shadow transition mide */
+    position: relative;
 }
 #five:hover{
-  box-shadow:inset 0px 0px 15px #fff;
-  /* outset/inset x-offset y-offset blur spread color */
+    box-shadow:inset 0px 0px 15px #fff;
+    /* outset/inset x-offset y-offset blur spread color */
 }
 #five::before{
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-  border: 1px solid #fff;
-  transition: all 0.8s;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border: 1px solid #fff;
+    transition: all 0.8s;
 }
 #five:hover::before{
-  transform: scale(1.2);
-  border: 1px solid transparent;
+    transform: scale(1.2);
+    border: 1px solid transparent;
 }
 
 #six{
-  position: relative;
-  border: 2px solid #fff;
-  transition: all 0.8s cubic-bezier(1,.4,0,.64);
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.8s cubic-bezier(1,.4,0,.64);
 }
 #six:hover{
-  color: #ef7e56;
+    color: #ef7e56;
 }
 
 #six::after{
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #fff;
-  /* border: 1px solid red; */
-  height: 100%;
-  width: 0%;
-  transition: all 0.8s cubic-bezier(1,.4,0,.64);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: #fff;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 0%;
+    transition: all 0.8s cubic-bezier(1,.4,0,.64);
+    z-index: -1;
 }
 #six:hover::after{
-  width: 100%;
+    width: 100%;
 }
 
 #seven{
-  position: relative;
-  border: 2px solid #fff;
-  transition: all 0.8s cubic-bezier(1,.4,0,.64);
-  overflow: hidden;
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.8s cubic-bezier(1,.4,0,.64);
+    overflow: hidden;
 }
 #seven:hover{
-  color: #ef7e56;
+    color: #ef7e56;
 }
 
 #seven::after{
-  content: '';
-  position: absolute;
-  left: -20px;
-  bottom: 9px;
-  background: #fff;
-  /* border: 1px solid red; */
-  height: 100%;
-  width: 0%;
-  transform: scale(2)rotate(25deg);
-  transition: all 0.8s cubic-bezier(1,.4,0,.64);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: 9px;
+    background: #fff;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 0%;
+    transform: scale(2)rotate(25deg);
+    transition: all 0.8s cubic-bezier(1,.4,0,.64);
+    z-index: -1;
 }
 #seven:hover::after{
-  width: 100%;
+    width: 100%;
 }
 
 #eight{
-  position: relative;
-  border: 2px solid #fff;
-  transition: color 0.3s;
+    position: relative;
+    border: 2px solid #fff;
+    transition: color 0.3s;
 }
 #eight:hover{
-  color: #ef7e56;
+    color: #ef7e56;
 }
 #eight::before{
-  content: '';
-  position: absolute;
-  background: #fff;
-  top: 0px;
-  left: 0px;
-  height: 0%;
-  width: 100%;
-  transition: all 0.3s;
-  z-index: -1;
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    height: 0%;
+    width: 100%;
+    transition: all 0.3s;
+    z-index: -1;
 }
 #eight::after{
-  content: '';
-  position: absolute;
-  background: #fff;
-  bottom: 0px;
-  left: 0px;
-  height: 0%;
-  width: 100%;
-  transition: all 0.3s;
-  z-index: -1;
+    content: '';
+    position: absolute;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+    height: 0%;
+    width: 100%;
+    transition: all 0.3s;
+    z-index: -1;
 }
 #eight:hover::before,
 #eight:hover::after{
-  height: 50%;
+    height: 50%;
 }
 
 
 #nine{
 
-  border: 2px solid #fff;
-  transition: all 0.3s;
+    border: 2px solid #fff;
+    transition: all 0.3s;
 }
 #nine:hover{
-  border-radius: 50px;
+    border-radius: 50px;
 }
 
 #ten{
-  position: relative;
-  border: 2px solid #fff;
-  transition: all 0.3s cubic-bezier(1,.4,0,.64);
-  overflow: hidden;
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.3s cubic-bezier(1,.4,0,.64);
+    overflow: hidden;
 }
 #ten:hover{
-  color: #ef7e56;
+    color: #ef7e56;
 }
 
 #ten::after{
-  content: '';
-  position: absolute;
-  left: -66px;
-  top: -30px;
-  background: #fff;
-  /* border: 1px solid red; */
-  height: 100%;
-  width: 100%;
-  border-radius: 100%;
-  transform: scale(0.05);
-  transition: all 0.3s cubic-bezier(1,.4,0,.64);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    left: -66px;
+    top: -30px;
+    background: #fff;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transform: scale(0.05);
+    transition: all 0.3s cubic-bezier(1,.4,0,.64);
+    z-index: -1;
 }
 #ten:hover::after{
-  width: 100%;
-  border-radius: 0%;
-  transform: scale(3);
+    width: 100%;
+    border-radius: 0%;
+    transform: scale(3);
 }
 
+/* transform */
+.box1{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    transition: all 0.5s;
+}
+.box1:hover{
+    transform: rotate(45deg);
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    transition: all 0.5s;
+}
+.box2:hover{
+    transform: scale(.2,.2);
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    transition: all 0.5s;
+}
+.box3:hover{
+    transform: skew(25deg,25deg);
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    transition: all 0.5s;
+}
+.box4:hover{
+    transform: translate(25px,25px);
+}
+.box5{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    transition: all 0.5s;
+    transform-origin: bottom right;
+}
+.box5:hover{
+    transform: rotate(45deg);
+}
 
-
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+    border: 4px solid black;
+    color: #fff;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: ease;
+}
+.box6:hover{
+    animation-play-state: paused;
+}
+@keyframes animation1 {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
 
 
 

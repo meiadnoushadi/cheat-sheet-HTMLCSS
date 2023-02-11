@@ -5,14 +5,12 @@ GENERAL ATTRIBUTE:
 ----------------------------------------------
 class
 id
-
 ----------------------------------------------
 ----------------------------------------------
 COMMENT:
 ----------------------------------------------
 ----------------------------------------------
 <!-- comment -->
-
 ----------------------------------------------
 ----------------------------------------------
 HTML:
@@ -160,11 +158,6 @@ semetic tag :
 	* section
 	* article
 	* footoer
-
-
-
-
-
 ------------------------------------------
 ------------------------------------------
 CSS-basic:
@@ -183,7 +176,6 @@ Note : comment in css => /* comment */
 Note : css miyad va besorat pishfarz yek seri style
 		 be har tag mide ke be name 'user agent stylesheet'
 		 hast 
-
 ------------------------------------------
 selector :
 	1- Element selector : name tag
@@ -194,7 +186,6 @@ selector :
 	6- selector child nested : selectro1 > selector2
 	7- selector family : selectro1 + selector2
 	8- select by attribute : selector[nameAtrribute] | selector[nameAtrribute=value]
-
 ------------------------------------------
 general attribute : 
 	1- color : 
@@ -284,6 +275,16 @@ general attribute :
 	19- display :
 		anvaye ravesh haye hast ke yek element dar page dare
 		value =>> inline,inline-block,block
+
+	20- fillter :
+		ejad effect roye element ha etefagh miyofte
+		* blur() => mizane mat shodegi bar hasb px
+		* grayscale() => mizane khakestri shodan bar hasb %
+
+	21- prespective:
+			baraye ejad transform haye 3D
+	22- prespective-origin:
+			baryae taein point start prespective
 ------------------------------------------
 layout :
 	flaot :
@@ -330,18 +331,12 @@ fonts :
 		src:url('address file ') format ('nameFormat'),
 		...
 	Note : use in query yek name font baraye ma misaze(font-family)
-
-
-
-
-
 ------------------------------------------
 colors :
 	nameColor => red,blue,...
 	rgb => rgb(a,b,c) :  0<= a,b,c <= 255 
 	rgb => rgba(a,b,c,d) :  0<= a,b,c <= 255 , 0<=d<=1
 	hex => #abcdef : ba assase 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
-
 ------------------------------------------
 morgin | padding :
 
@@ -368,7 +363,6 @@ morgin | padding :
 		* right
 		summry = padding:top right bottom left;
 				 = padding : top/bottom right/left
-
 ------------------------------------------
 Box Model : ba border model in mozo made nazar 
 			gerefte mishe ke shoma mitonid:
@@ -383,7 +377,6 @@ Box Model : ba border model in mozo made nazar
 	box-sizing :
 		* border-box
 		* content-box : default
-
 ------------------------------------------
 before,after:
 	after :
@@ -415,7 +408,6 @@ em/rem:
 
 	rem : 
 		1 rem == font-size html ke 16px hast
-
 ------------------------------------------
 vh/vw:
 	vh: har 1 vh == 1% height viewport
@@ -424,10 +416,6 @@ vh/vw:
 	Note: vaghti ke height mizari roye 100% height tamame
 				container khodesh ro migire vali vaghti az 100vh
 				estefade mikonim 100% viewport khodesh ro migire
-
-	 
-
-
 ------------------------------------------
 ------------------------------------------
 CSS-responsive:
@@ -459,7 +447,6 @@ structure:
 	Note : dar tag link dar tag head baraye css beghire az rel va href
 			 attribute dige ham dare be name media ke beshorat zir por mishe:
 				meida="[not|only(default)] <meida-type> [and] (<media-condition>)" 
-
 ------------------------------------------
 ------------------------------------------
 CSS-animation:
@@ -468,14 +455,112 @@ CSS-animation:
 transition:
 	Note: havasam bashe ke transition yek efect hast va bad az
 				anjam yek efect roye element active mishe
+
 	* transition-property : <name property> , <name property>  
 		Note: age be jaye name property all bezarim mishe defaultesh
+
 	* transition-duration : Xs , Ys  modat zaman vahed s/ms
 		Note: age transition-property dade nashe transition-duration
 			    besorat pishfarz roe efect ha emal mishe (ex:hover) va
 					default 0ms hast.
+
 	* transition-delay : Xs , Ys  modat zamane maxx shodan
+
 	* transition-timing-function : ease/linear/ease-in/ease-out/ease-in-out
 		Note : cubic-bezier() mitoni ber to site : www.cubic-bezier.com
 
-	shortcute : transition : <property> <duration> <delay> <timing> , <property> <duration> <delay> <timing>
+	* shortcute : transition : <property> <duration> <delay> <timing> , <property> <duration> <delay> <timing>
+
+
+transform:
+	Note: havasam bashe ke transition yek efect hast va bad az
+	Note: dar transform ma roye efect roye abad kar mikonim
+
+	* transform: rotate(<number>deg) => baraye charkhesh
+			Note:baraye inke behtar bekhayem in taghirat ro 
+				 bebinim az transition ha estefade mikonim
+			Note : rotate(<teded>turn) : turn yani 1 dor kamel
+			Note : rotate(<teded>grad) : grad yani ...
+	
+	* transform: scale() : baraye bozorg ya kochad shodan
+			Note: scale(x,y) : x->taghirat dar x y->taghirat dar y
+			Note: hamchenin scaleX() va scaleY() ham darim
+
+	* transform: skew(Xdeg,Ydeg) : jabejaei dar rastaei amid
+			bar sath hast
+			Note: age tak meghdare dade beshe faghat roye x amal mikone
+			Note: hamchenin skewX() va skewY() ham darim
+
+
+	* transform: translate();
+			be harekat dadane element ha dar page bar hasb px gofte mishe
+			Note: translate(x,y) : x-> harekat x,y-> harekat y
+			Note: hamchenin translateX() va translateY() ham darim
+			Note: age tak meghdare dade beshe faghat roye x amal mikone
+
+	* shortcute : transform : <property> <property> <property> ...
+
+	* 3D transform : 
+		barye in kar bayad be container yek property prespective bar hasb px bedim
+		Note: hachi meghdare kam tari dashte bashe taghirat bozorg tar hast
+		Note: tamame value haye transform 2D dar 3D ham hast va jahat ha mishe x,y,z
+			rotateX(),rotateY(),rotateZ() - shortcute: rotate3d(x,y,z,<deg>) ke 
+			x,y,z ya 0  yz 1 hast
+			scaleX(),scaleY(),scaleZ() - shortcute: scale3d(x,y,z) ke 
+			x,y,z bar hast int hast
+			translateX(),translateY(),translateZ() - shortcute: translate3d(x,y,z) ke 
+			x,y,z bar hasb % hast
+
+	*** transform-origin:
+		bare taein markaze davaran morede estefade gharar migire
+		transform-origin:<num>vahed <num>vahed
+		Note: mishe jaye <num>vahed az top/bottom/left/right estefade kard
+
+
+animation:
+	baryae sakhte yek animation dar css az ravesh zir estefade mikonim:
+		@keyframes <nameAnimation>{
+			from{
+				start property
+			}
+			to{
+				end property
+			}
+		}
+		@keyframes <nameAnimation>{
+			0%{
+				start property
+			}
+			...%{
+				start property
+			}
+			100%{
+				end property
+			}
+		}
+	
+	* animation-name : name animation sakhte shode hast ke be selector midim
+	* animation-duration : modat zamani hast ke animation dar hale injam hast bar 's'
+	* animation-delay : zamane takhir dar anjam yek animation hast
+	* animation-iteration-count : tedad tekrare yek animation
+	* animation-direction : harekat dar animation ro kontrol mikone
+		Note: anjame karha dar tarife animation
+		value :
+			normal => 0% ... 100%
+			reverse => 100% ... 0%
+			alternate => 0% ... 100% ... 0%
+			alternate-reverse => 100% ... 0% ... 100% 
+	* animation-timing-function : shabihe be transition-timing-function amal mikone
+		va timig anjam animation ro kontrol nikone
+	* animation-play-state : barye in jad tavaghof dar anjam yek animation hast
+		value :
+			runing => animation dar hale ejra
+			paused => pause kardan animation
+		Note: az jaye ke pause shode edame harekat mide
+	* animation-fill-mode : halate payan ro moshakhas mikone ke dar che state bashe
+		value :
+			Note : age animation-fill-mode nade bashim default roye backwards
+			forwards : stop in 100%
+			both : .....
+	
+	* shortcute : animation : <name> <duration> <delay> <iteration-count>
