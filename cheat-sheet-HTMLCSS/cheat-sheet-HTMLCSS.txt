@@ -466,6 +466,8 @@ CSS-animation:
 ------------------------------------------
 ------------------------------------------
 transition:
+	Note: havasam bashe ke transition yek efect hast va bad az
+				anjam yek efect roye element active mishe
 	* transition-property : <name property> , <name property>  
 		Note: age be jaye name property all bezarim mishe defaultesh
 	* transition-duration : Xs , Ys  modat zaman vahed s/ms
