@@ -1,0 +1,212 @@
+/* --------------------------------------------------------- */
+/* fonts */
+@font-face {
+    font-family: lale;
+    src: url(../fonts/Lalezar-Regular.ttf) format("truetype");
+}
+/* Reset CSS */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* main style */
+html,body{
+    font-family: lale,Arial, Helvetica, sans-serif;
+}
+/* Reset tag a */
+a{
+    text-decoration: none;
+}
+/* --------------------------------------------------------- */
+/* utility classes */
+.bg-dark{
+    background: #444;
+    color: #fff;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.text-primary{
+    color: orange;
+}
+.l-heading{
+    font-size: 2rem;
+}
+.m-heading{
+    font-size: 1.4rem;
+}
+.bold{
+    font-size: 1.5 5rem;
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: orange;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.btn:hover{
+    color: orange;
+    background: #fff;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-1{
+    margin: 1.25rem;
+}
+.py-3{
+    padding: 3rem 0px;
+}
+.py-2{
+    padding: 2rem 0px;
+}
+.py-1{
+    padding: 1.25rem 0px;
+}
+.p-3{
+    padding: 3rem;
+}
+.m
+.p-2{
+    padding: 2rem;
+}
+.p-1{
+    padding: 1.25rem;
+}
+/* --------------------------------------------------------- */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0px;
+}
+#navbar a{
+    color: #fff;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: .75rem;
+    margin: 0px .25rem;
+}
+#navbar ul li a:hover{
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#showcase{
+    background: #444 url(../images/1109823.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ccc;
+}
+/* 
+/* #section1{
+    display: flex;
+} */
+#section1 .items{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+#section1 .items .item{
+    flex:1;
+    text-align: center;
+    padding: 1rem;
+}
+#section1 .items .item i{
+    background-color:orange;
+    /* display: inline-block;
+    margin: auto auto;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%; */
+    padding: 1.25rem;
+    border-radius: 50%;
+}
+
+#section2{
+    display: flex;
+}
+#section2 div{
+    flex: 1 ;
+}
+#section2 .img{
+    background: url('../images/1947491.jpg') no-repeat center center/cover;
+}
+#section2 .content{
+    text-align: right;
+}
+#section2 .content .list{
+    list-style-type: none;
+    margin: 0.5rem;
+}
+#section2 .content .list li{
+    font-size: 1.3rem;
+    border-bottom: 2px dotted #555;
+    padding: 0.3rem 0px;
+}
+#section3 .items{
+    display: flex;
+}
+#section3 .items div{
+    flex: 1;
+}
+#section3 .items div img{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+}
+#contact .contact-form{
+    flex-basis: 600px;
+    text-align: center;
+}
+#contact .contact-form label{
+    display: block;
+    margin: 1rem 0;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding:0.5rem;
+    border: 1px solid #333;
+    border-radius: 7px;
+}

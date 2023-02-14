@@ -320,8 +320,27 @@ layout :
 		sticky : in kar bess mishe dar zamani ke scroll miyad roee
 				in element jaye on element dar page fix mishe
 	
-	felx :
-
+	flex :
+		flex daraye 2 ghesmat hast:
+			1-flex-container
+			2-flex-item
+		* container:
+			# display : flex
+			# flex-direction : row{default}/column/row-reverse/column-reverse
+			# flex-wrap : no-wrap{default}/wrap/wrap-reverse
+			# flex-flow : <flex-wrap> <flex-direction>
+			# justify-content : stretch{default}/baseline/flex-start/flex-end/center/space-around/space-evenly
+				Note: main axis
+				Note: space-between: element ha nesbat be khodeshon
+				Note: space-evenly: element ha nesbat be ham
+			# align-items : flex-start/flex-end/center/space-between/space-around/space-evenly
+				Note: cross axis
+				Note: ba dadane in property be dar rastaei cross male khodesh emal mishe
+		* item :
+			# flex : <num> : 12 ghesmat hast ke num nesbat on ro ba 12 migire
+			# flex-basis : hamon width element hast
+			# align-self : flex-start/flex-end/center/space-between/space-around/space-evenly
+			# order : tartib chinesh dar flex box
 	grid :
 
 ------------------------------------------
