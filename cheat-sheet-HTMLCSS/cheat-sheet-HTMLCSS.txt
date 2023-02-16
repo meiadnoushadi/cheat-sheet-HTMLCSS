@@ -342,7 +342,30 @@ layout :
 			# align-self : flex-start/flex-end/center/space-between/space-around/space-evenly
 			# order : tartib chinesh dar flex box
 	grid :
-
+		* container:
+			# display : grid / inlin-grid / sub-grid
+			# grid-tempalate-column : <size> 
+			# grid-tempalate-column : <size> <size> <size> ...
+				size soton haye page
+				Note : size px | auto[stretch] | fr[nesbat be page taghsim mikone]
+				Note : estefade az method repeat(<num>,<size>)
+			# grid-gap : <size>
+				fasele item ha az ham
+			# grid-tempalate-row : <size>
+				size radifha haye page
+		* item :
+			# grid-column-start:<num line>
+			# grid-column-end:<num line>
+			# grid-row-start:<num line>
+			# grid-row-end:<num line>
+			Note : shortcute grid column:<num line start> / <num line end>
+			Note : estefade az keyword 'span' neshan az tendad cell haye page hast ke
+				   mishe jaye <num line> estefade kard
+				   EX : grid column : <num line>  / span <num : tedad cell>
+			Note : shortcute grid row:<num line start> / <num line end>
+			Note : estefade az keyword 'span' neshan az tendad cell haye page hast ke
+				   mishe jaye <num line> estefade kard
+				   EX : grid row : <num line>  / span <num : tedad cell>
 ------------------------------------------
 fonts :
 	query :
