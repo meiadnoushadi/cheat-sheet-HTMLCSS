@@ -372,6 +372,13 @@ layout :
 			Note : estefade az keyword 'span' neshan az tendad cell haye page hast ke
 				   mishe jaye <num line> estefade kard
 				   EX : grid row : <num line>  / span <num : tedad cell>
+		* area :
+			yek tarif darim => dar container etefagh miyofte
+			# grid-tempalate-area:
+				'<col1> <col2> ...'
+				'<col1> <col2> ...'
+				...
+			yek name gozari darim => dar child etefagh miyofte
 ------------------------------------------
 fonts :
 	query :
