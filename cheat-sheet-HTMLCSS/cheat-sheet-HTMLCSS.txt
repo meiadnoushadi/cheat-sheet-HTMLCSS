@@ -347,7 +347,13 @@ layout :
 			# grid-tempalate-column : <size> 
 			# grid-tempalate-column : <size> <size> <size> ...
 				size soton haye page
-				Note : size px | auto[stretch] | fr[nesbat be page taghsim mikone]
+				Note : size px | auto[stretch] | fr[nesbat be page taghsim mikone] | minmax(<minsize>,<maxsize>)
+				Note : estefade az method repeat(<num>,<size>)
+			# grid-tempalate-row : <size> 
+			# grid-tempalate-row : <size> <size> <size> ...
+				size soton haye page
+				Note : size px | auto[stretch] | fr[nesbat be page taghsim mikone] | minmax(<minsize>,<maxsize>)
+					   auto-fill[tedad column haro por mikone bar assase inke size chi hast va mabagi ro wrap mikone]
 				Note : estefade az method repeat(<num>,<size>)
 			# grid-gap : <size>
 				fasele item ha az ham
