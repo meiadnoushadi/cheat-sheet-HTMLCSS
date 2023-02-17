@@ -333,13 +333,23 @@ layout :
 				Note: main axis
 				Note: space-between: element ha nesbat be khodeshon
 				Note: space-evenly: element ha nesbat be ham
+				in property miyad va har item ro bar assase content tanzim mikone. 
+			# justify-items:
+				in property miyad va har item ro bar assase blockesh tanzim mikone.
+				Note : default => stretch			
 			# align-items : flex-start/flex-end/center/space-between/space-around/space-evenly
 				Note: cross axis
 				Note: ba dadane in property be dar rastaei cross male khodesh emal mishe
+				in property miyad va har item ro bar assase blockesh tanzim mikone.
+			# align-content:
+				Note: default => stretch
+				in property miyad va har item ro bar assase content tanzim mikone.
 		* item :
 			# flex : <num> : 12 ghesmat hast ke num nesbat on ro ba 12 migire
 			# flex-basis : hamon width element hast
+			# justify-self : flex-start/flex-end/center/space-between/space-around/space-evenly
 			# align-self : flex-start/flex-end/center/space-between/space-around/space-evenly
+				Note:dar self change haro baryae yek item anjam midahim
 			# order : tartib chinesh dar flex box
 	grid :
 		* container:
