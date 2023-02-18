@@ -286,6 +286,12 @@ general attribute :
 	22- prespective-origin:
 			baryae taein point start prespective
 ------------------------------------------
+variable:
+	tarif:
+		-- <nameVariable> : value
+	use:
+		property : var<nameVariable>
+------------------------------------------
 layout :
 	flaot :
 		float be in sorat amal mikone ke miyad va 
