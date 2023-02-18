@@ -1,0 +1,12 @@
+@import 'variables';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: $primary-color;
+    font-family: $font-family;
+    line-height: 1.4rem;
+}

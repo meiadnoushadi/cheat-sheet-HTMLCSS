@@ -635,3 +635,27 @@ animation:
 			both : .....
 	
 	* shortcute : animation : <name> <duration> <delay> <iteration-count>
+
+
+------------------------------------------
+------------------------------------------
+SASS:
+------------------------------------------
+------------------------------------------
+use sass:
+	1-insatll node.js
+	2-npm install node-sass => baraye compile kardane file sass be css
+							   be komake node.js
+
+	base order :
+		package.json:
+			script:
+				"sass": "node-sass -w scss/ -o dist/css --recursive"
+				-w -> watch in ...
+				-o -> output in ...
+	
+	USE : npm run sass
+
+	* baraye tarife variable dar scss az nemad '$<nameVariable>' estefade mikonim
+	Note: partail file ba '_' shoro mishan ta engin on ro compile nakone
+	Note: baraye ertebat partial ba file asli | @import '<namePartailFile[bedone _ ]>'; | estefade mishe

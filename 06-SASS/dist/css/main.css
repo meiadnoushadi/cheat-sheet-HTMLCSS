@@ -1,0 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1ffff4;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.4rem; }
