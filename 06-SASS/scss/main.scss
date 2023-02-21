@@ -1,12 +1,78 @@
-@import 'variables';
+@import 'variables','function';
 
+// *{
+//     padding: 0px;
+//     margin: 0px;
+//     box-sizing: border-box;
+// }
+// body{
+//     background-color: $primary-color;
+//     font-family: $font-family;
+//     line-height: 1.4rem;
+// }
+// =========================================
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+%btn{
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: all .3s;
+}
 body{
-    background-color: $primary-color;
+    background-color: $light-color;
+    color: $dark-color;
     font-family: $font-family;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
+}
+header{
+    background-color: $dark-color;
+    color: $light-color;
+    padding: 1.5rem;
+    h1{
+        text-align: center;
+    }
+}
+.section{
+    padding: 3rem;
+
+    h3{
+        font-size: 2rem;
+        text-shadow: 1px -1px 2px;
+    }
+    &-a{
+        background-color: $primary-color;
+    }
+    &-b{
+        background-color: $secondary-color;
+    }
+}
+.btn{
+    &-light{
+        @extend %btn;
+        border: 1px solid $btn-dark;
+        background-color: $btn-dark;
+        color: set-text-color($btn-dark);
+    
+        &:hover{
+            color: $btn-dark;
+            background-color: $btn-light;
+        }
+    }
+    &-dark{
+        @extend %btn;
+        color: $btn-dark;
+        border: 1px solid $btn-dark;
+        background-color: $btn-light;
+    
+        &:hover{
+            color: $btn-light;
+            background-color: $btn-dark;
+        }
+    }
 }

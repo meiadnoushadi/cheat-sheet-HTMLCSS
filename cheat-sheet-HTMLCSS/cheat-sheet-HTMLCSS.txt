@@ -659,3 +659,41 @@ use sass:
 	* baraye tarife variable dar scss az nemad '$<nameVariable>' estefade mikonim
 	Note: partail file ba '_' shoro mishan ta engin on ro compile nakone
 	Note: baraye ertebat partial ba file asli | @import '<namePartailFile[bedone _ ]>'; | estefade mishe
+--------------------
+nested:
+	baraye select tag haye dakhele yek container
+	dar sass mishe on ro dakhele on selector nevesht
+	Note: dar class haye ham sath va bakhshi ham nam
+	      ghesmat text moshabes ro mishe & dar dakhele
+		  yek class ham sath nevasht va meghdare dehi
+		  kard
+--------------------
+inherit:
+	define:
+		%<name>{
+			value;
+		}
+			craete class mode 
+
+	use:
+		@extend %<name>
+--------------------
+functiones:
+	define:
+		@function <nameFunction>(parameter){
+			code...
+		}
+	use:
+		<nameFunction>(parameter)
+
+	define:
+		@mixin <nameMixin>(parameter[property]){
+			code...
+		}
+	use:
+		@include <nameMixin>
+
+Note:
+	--webki-	=> safari
+	--ms-		=> microsoft
+	--o-		=> opera
